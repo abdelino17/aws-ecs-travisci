@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+      build: .
+      command: sh -c "python main.py"
+      image: abdelino/cicd-ecs:latest
+      ports:
+        - "80:8000"
